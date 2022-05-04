@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    elite clinic
+{% endblock %}
+
+
+{% block body %}
+
+    <nav id="fbar" class="navbar navbar-dark bg-dark">
+        <P style="color:aliceblue; font-family: 'Oleo Script Swash Caps', cursive; font-size: x-large;">ELITE clinic</P>
+        <a href="/book"><button class="btn btn-secondary btn-lg">book an appointment</button></a>
+        
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <p style="font-family: 'Oleo Script Swash Caps', cursive; font-size:x-large" class="tt">our team</p>
+        <hr>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            <div class="card" >
+                <img class="card-img-top" alt="Dr.beshoy Nady" src="static/beshoy.jpg">
+                <div class="card-body">
+                    
+                    <h5 class="card-title">Dr.Beshoy Nady</h5>
+                    <p class="card-text">Dr.Proph of endo, crown, implant, ortho and surgery</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <img class="card-img-top" src="static/G_Black.jpg" alt="Dr.g.V.Black">
+                <div class="card-body">
+                    <h5 class="card-title">Dr.G.V.Black</h5>
+                    <p class="card-text">dental assistant for Dr.Beshoy Nady</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+       <p style="font-family: 'Oleo Script Swash Caps', cursive; font-size:x-large" class="tt">our clinic</p> 
+        <hr>
+    </div>
+    <div class="d-flex justify-content-around">
+    <img style="max-width: 100%; height: auto;" class="img-thumbnail" src="/static/clinic.jpg" alt="clinic">
+    <!--<img style="max-width: 100%; height: auto;" src="/static/clinic2.jpg" alt="clinic" class="img-thumbnail">
+    <img style="max-width: 100%; height: auto;" src="/static/clinic3.jpg" alt="clinic" class="img-thumbnail">
+    -->
+    </div>
+    <footer>
+        contact us on eliteclinic@gmail.com
+    </footer>
+
+
+{% endblock %}

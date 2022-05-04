@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    book appointment
+{% endblock %}
+
+{% block body %}
+    <div style="font-family: 'Oleo Script Swash Caps', cursive; font-size:x-large; text-align: center; padding: 2%;">fill out the form to book appointment</div>
+    <div class="formContainer">
+    <form action="/booked" method="post">
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="text" name="name" placeholder="Name" autocomplete="off">
+            <label for="name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="number" name="age" placeholder="Age">
+            <label for="age">Age</label>
+        </div>
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="email" name="email" placeholder="email">
+            <label for="email">E-mail</label>
+        </div>
+        <div class="form-floating mb-3">
+            
+            <input class="form-control" type="date" name="appointment" placeholder="date">
+            <label for="appointment">Appointment date</label>
+        </div>
+        <input style="width: 100%;" class="btn btn-secondary btn-lg" type="submit">
+        </div>
+
+
+    </form>
+
+{% endblock %}
